@@ -14,6 +14,17 @@ import java.util.Optional;
 public class MemberService { // ctrl + shift + T -> Test class 바로 생성 가능
 
     private final MemberRepository memberRepository;
+
+//    @Autowired private MemberService memberService; //  필드 주입 방법
+
+
+/*
+    // setter 주입, 세팅 이후에 바뀔 이유가 없는데 public하기 노출되어서 잘 쓰지 않음.
+    @Autowired public void setMemberRepository(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+*/
+
     @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
