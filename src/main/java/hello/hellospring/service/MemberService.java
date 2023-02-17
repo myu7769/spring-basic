@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+
 public class MemberService { // ctrl + shift + T -> Test class 바로 생성 가능
 
     private final MemberRepository memberRepository;

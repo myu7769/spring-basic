@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 // 굉장히 길고 불편하다는 코드를 설명 해줌
-@Repository
+
 public class JdbcMemberRepository implements MemberRepository {
     private final DataSource dataSource;
     public JdbcMemberRepository(DataSource dataSource) {
